@@ -1,0 +1,218 @@
+@font-face {
+font-family: HelveticaNeue-Medium;
+src: url("fonts/HelveticaNeue-Medium.otf") format("opentype");
+}
+@font-face {
+    font-family: HelveticaNeue-Medium; /* Имя шрифта */
+    src: url(fonts/HelveticaNeue-Medium.ttf); /* Путь к файлу со шрифтом */
+   }
+div, p, h1, h2, a {
+	box-sizing: border-box;
+}
+section {
+	padding: 20px;
+}
+body {
+	margin: 0 auto;
+	padding: 0;
+	max-width: 600px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+header {
+	width: 100%;
+	background-color: #53545e;
+	padding: 30px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.logo {
+	width: 155px;
+	height: 33px;
+	}
+.logo img {
+	width: 100%;
+	height: auto;
+}
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.857em;
+	color: #fff;
+	text-align: right;
+	font-weight: bold;
+}
+h1 a {
+	text-decoration: none;
+	color: gray;
+}
+h1 a:hover {
+	text-decoration: underline;
+	color: orange;
+}
+h2 {
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.286em;
+	font-weight: bold;
+	color: #53545e;
+	text-align: left;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+p {
+	font-family: HelveticaNeue-Medium;
+	font-weight: normal;
+	color: gray;
+	text-align: left;
+	margin-bottom: 20px;
+}
+.head {
+	width: 100%;
+}
+.head img {
+	width: 100%;
+	height: auto;
+}
+.button {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+    line-height: 2em;
+    padding: 0.5em;
+	background-color: #53545e;
+	text-decoration: none;
+}
+.button:hover {
+ color: orange;
+}
+.small-item {
+	background-color: #fff;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.small-item-block {
+	width: 50%;
+	float: left;
+	height: auto;
+	padding: 20px 10px 20px 0;
+}
+.small-item-block img {
+	width: 100%;
+	height: auto;
+}
+.adspace {
+	background-color: #fff;
+}
+.adspace-list {
+	display: flex;
+	padding: 0;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.adspace-list li{
+	width: 160px;
+	height: 160px;
+	display: block;
+}
+.blog {
+	width: 100%;
+	background-color: #fff;
+}
+.social {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+.social-list {
+	list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.social-list-item {
+	background-color: #e1e1e1;
+	border-radius: 50%;
+	float: left;
+	width: 35px;
+	margin-left: 10px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+}
+.social-list-item:hover {
+	background-color: orange;
+}
+.footer {
+	width: 100%;
+	background-color: #f1f1f1;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.footer-left {
+	width: 65%;
+}
+.footer-right {
+	width: 35%;
+}
+.footer-right-list {
+	list-style-type: none;
+}
+.footer-right-item {
+	background-image: url(img/bullet.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	font-family: HelveticaNeue-Medium;
+	font-weight: normal;
+	padding-left: 15px;
+	color: #fff;
+	text-align: left;
+	margin-bottom: 10px;
+}
+.footer-right-item a, .footer-right-item a:visited {
+	color: #fff;
+	text-decoration: none;}
+.footer-right-item a:hover {
+	color: orange;
+}
+.copyright {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	width: 100%;
+	background-color: #53545e;
+	border-top: 1px solid gray;
+}
+.copyright a, .copyright p, .copyright span {
+	font-family: HelveticaNeue-Medium;
+	font-weight: normal;
+	color: gray;
+	text-align: left;
+	text-decoration: none;
+}
+.copyright a:hover {
+	color: orange;
+	text-decoration: underline;}
+
+.copyright span {
+	color: #fff;
+}
+
+
+@media screen and (min-width:320px) and (max-width:500px){
+	section {padding: 10px;}
+	.logo {	margin: 0 auto;}
+	header h1 {display: block; float: none;}
+    .small-item-block {width: 100%;}
+    .adspace-list {justify-content: center;}
+    .adspace-list li {margin: 10px auto;}
+    .footer-left { width: 100%;}
+    .footer-right {width: 100%;}
+    .social-list { justify-content: flex-start;
+    h2 { margin: 20px auto;}
+}
